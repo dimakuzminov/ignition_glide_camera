@@ -10,6 +10,7 @@ full_build:
 	cd $(PWD)/ignition; make clean
 	cd $(PWD)/ignition; make
 	cp ignition/ignition buildroot/output/target/usr/bin
+	cp device_gstreamer/* buildroot/output/target/usr/bin/
 	cd $(PWD)/buildroot; make
 
 ignition:
